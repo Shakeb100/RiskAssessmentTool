@@ -20,18 +20,25 @@ function HomePage() {
 
       <div>
 
-        <Link href="/Financial">
-        <button>Financial</button> 
-        </Link>
+        <div>
+          <h3>Which Risk are you concerned about?</h3>
+        </div>
 
-        <Link href= "/Operational">
-        <button>Operational</button> 
-        </Link>
+        <div>
 
-        <Link href= "/Technical">
-        <button>Technical</button>
-        </Link>
+          <Link href="/Financial">
+          <button>Financial</button> 
+          </Link>
 
+          <Link href= "/Operational">
+          <button>Operational</button> 
+          </Link>
+
+          <Link href= "/Technical">
+          <button>Technical</button>
+          </Link>
+
+        </div>
 
       </div>
 
