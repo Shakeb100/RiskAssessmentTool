@@ -14,7 +14,7 @@ function HomePage() {
         </div>
 
         <div>
-          <h2>Helping you identify and manage potential risks </h2>
+          <h2>Helping you make the right move. </h2>
         </div>
 
 
