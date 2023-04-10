@@ -25,6 +25,11 @@ const Checkbox: React.FC<CheckboxProps> = ({ questions }) => {
   const numSelectedQuestions = selectedQuestions.length;
   const totalQuestions = questions.length;
 
+  const Assessment =
+  numSelectedQuestions / totalQuestions > 0.75
+    ? "Warning: You have selected more than 3/4 of the available options."
+    : null;
+
   return (
     <div>
       {questions.map((question) => (
@@ -40,6 +45,9 @@ const Checkbox: React.FC<CheckboxProps> = ({ questions }) => {
       ))}
       <p>
         {numSelectedQuestions} out of {totalQuestions} questions selected
+      </p>
+      <p>
+        {Assessment}
       </p>
     </div>
   );
