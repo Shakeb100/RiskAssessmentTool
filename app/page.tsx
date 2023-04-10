@@ -1,11 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import Financial from './Financial/page';
 
 function HomePage() {
   return (
     <>
-
 
       <title>Risk Assessment Tool</title>
 
@@ -26,8 +24,8 @@ function HomePage() {
 
         <div>
 
-          <Link href="/Financial">
-          <button>Financial</button> 
+          <Link href="/Business">
+          <button>Business</button> 
           </Link>
 
           <Link href= "/Operational">
@@ -36,6 +34,10 @@ function HomePage() {
 
           <Link href= "/Technical">
           <button>Technical</button>
+          </Link>
+
+          <Link href= "/Security">
+          <button>Security</button>
           </Link>
 
         </div>
