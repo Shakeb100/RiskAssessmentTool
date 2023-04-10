@@ -18,40 +18,26 @@ function HomePage() {
 
     <body  className={mon.className}>
         <div>
-          <h1>Risk Assessment Tool</h1>
+          <h1>NLNB Risk Assessment</h1>
         </div>
 
+      <div className='fade-in'>
         <div id="textdiv">
-          <h2 >Helping you make the right move. </h2>
-        </div>
-
-
-      <div>
-
-        <div>
-          <h3>Which Risk are you concerned about?</h3>
-        </div>
-
-        <div className={mon.className}>
-
-          <Link href="/Business">
-          <button className={`${mon.className} button`}>Business</button>
-          </Link>
-
-          <Link href= "/Operational">
-          <button className={`${mon.className} button`}>Operational</button> 
-          </Link>
-
-          <Link href= "/Technical">
-          <button className={`${mon.className} button`}>Technical</button>
-          </Link>
-
-          <Link href= "/Security">
-          <button className={`${mon.className} button`}>Security</button>
-          </Link>
-
+          <h2>Helping you make the right move. </h2>
         </div>
       </div>
+
+<div className='flex'>
+  <div className="fade-2">
+    <div id ="homebdiv">
+      <Link href="/Questions">
+        <button className={`${mon.className} button`}>Get Started</button>
+      </Link>
+    </div>
+  </div>
+</div>
+
+      
 
       </body>
 

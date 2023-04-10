@@ -36,7 +36,7 @@ const Checkbox: React.FC<CheckboxProps> = ({ questions }) => {
     assessmentScore = "No Risk";
   } else if (numSelectedQuestions / totalQuestions >= criticalThreshold) {
     assessmentScore = "Critical";
-  } else if (numSelectedQuestions / totalQuestions > highRiskThreshold) {
+  } else if (numSelectedQuestions / totalQuestions >= highRiskThreshold) {
     assessmentScore = "High Risk";
   } else {
     assessmentScore = "Low Risk";

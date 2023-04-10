@@ -3,7 +3,12 @@ import Link from 'next/link';
 import { useState } from "react";
 import Checkbox from '../Checkbox';
 import '../globals.css'
+import { Montserrat} from 'next/font/google'
 
+const mon = Montserrat({
+  subsets: ['latin'],
+  weight: '500'
+})
 
 function security() {
     const checkboxQuestions = [
@@ -16,18 +21,20 @@ function security() {
       { label: "Least-privilege access controls are in place to ensure that personnel within NLNB only have access to what they need in order to do their job", value: "control" },
       {label: "There are no separate work computer for employees that they use solely to do their job at NLNB", value: "computers"}
     ];
+    
     return (
       <>
-  
-        <title>Security</title>
-  
+      
+          <title>Security</title>
+
+        <body className={mon.className}>
           <div>
             <h1>Security Risks</h1>
           </div>
           <div>
           <Checkbox questions={checkboxQuestions} />
           </div>
-  
+      </body>
   
       </>
     );

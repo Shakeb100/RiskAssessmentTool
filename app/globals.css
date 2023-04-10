@@ -2,48 +2,89 @@
 h1{
   text-align: center;
   color: #120d72;
-  font-size: 4rem;
+  font-size: 5rem;
   margin-top: 2rem;
 }
   
+
+h3{
+  text-align: center;
+  color: #000000;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
 #textdiv{
-  margin-top: 10rem;
+  margin-top: 12rem;
   margin-left: 3rem;
   font-size: 45px;
   width: 600px;
 }
 
+#homebdiv{
+  margin-left: 12rem;
+  margin-top: 2rem;
+}
+
+.fade-in {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.fade-2 {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
 .button {
-  margin: 10px;
-  padding: 15px 30px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  border-radius: 10px;
-  display: block;
-  border: 0px;
-  font-weight: 700;
-  box-shadow: 0px 0px 14px -7px #dddddd;
-  background-image: linear-gradient(45deg, #120d72 0%, #4667b4  51%, #120d72  100%);
+  background-color: #ffffff;
+  border: 2px solid #120d72;
+  border-radius: 30px;
+  box-shadow: #000042 4px 4px 0 0;
+  color: #000742;
   cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 0 35px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin: 1rem;
+
 }
+
 .button:hover {
-  background-position: right center;
-  /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
+  background-color: rgb(242, 246, 248);
 }
-a{
-    text-decoration: none;
-}
+
 .button:active {
-  transform: scale(0.95);
+  box-shadow: #000642 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
 }
 
 body {
@@ -67,3 +108,19 @@ body {
   transform-origin: bottom left;
   transform: skew(45deg);
 }
+
+.riskimage{
+  margin-left: 60rem;
+  flex-wrap: wrap;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.moreb{
+  margin-top: 8rem;
+  margin-left: 10rem;
+}
+

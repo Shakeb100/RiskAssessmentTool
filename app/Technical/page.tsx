@@ -3,7 +3,12 @@ import Link from 'next/link';
 import { useState } from "react";
 import Checkbox from '../Checkbox';
 import '../globals.css'
+import { Montserrat} from 'next/font/google'
 
+const mon = Montserrat({
+  subsets: ['latin'],
+  weight: '500'
+})
 
 function Technical() {
     const checkboxQuestions = [
@@ -16,19 +21,22 @@ function Technical() {
       { label: "All software applications, operating systems, and firmware are NOT kept up-to-date with the latest security patches and updates to protect against known vulnerabilities", value: "vulnerabilities" },
       {label: "No intrusion-detection system (IDS) is employed to keep track of suspicious activity and monitor security threats.", value: "IDS"}
     ];
+
     return (
       <>
   
         <title>Technical</title>
   
+
+        <body className={mon.className}>
           <div>
             <h1>Technical Risks</h1>
           </div>
           <div>
-          <Checkbox questions={checkboxQuestions} />
+          <Checkbox questions={checkboxQuestions}/>
           </div>
   
-  
+          </body>
       </>
     );
     }

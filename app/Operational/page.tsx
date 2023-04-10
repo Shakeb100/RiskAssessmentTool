@@ -16,7 +16,7 @@ function Operational() {
     ];
     return (
       <>
-  
+      
         <title>Operational</title>
   
           <div>
