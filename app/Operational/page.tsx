@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useState } from "react";
 import Checkbox from '../Checkbox';
+import '../globals.css'
 
 
 function Operational() { 
