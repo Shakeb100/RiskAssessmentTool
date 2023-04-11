@@ -1,8 +1,10 @@
-# Bank Risk Assessment Tool 👨‍💼🏦
+# NLNB Risk Assessment Tool 🏦 ⚠️
 
 Designed to be a question-based diagnostic tool, built using TypeScript and Next.js, the NLNB Risk Assessment Tool helps banks identify and assess IT risks across the organization.
 
 The tool is intended to be a questionnaire with 25-35 questions that will be answered by the client. Based on their responses, the tool will develop a risk rating, calculate residual risk, and provide recommendations to the bank based on your analysis. Additionally, the tool will automatically calculate the impact of disruptions across critical functions
+
+### Created for Penn State's IST 302 Project Management course 🐾
 
 ## 🤔 How does it work?
 
