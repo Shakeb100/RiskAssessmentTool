@@ -3,6 +3,12 @@ import Link from 'next/link';
 import { useState } from "react";
 import Checkbox from '../Checkbox';
 import '../globals.css'
+import { Montserrat} from 'next/font/google'
+
+const mon = Montserrat({
+  subsets: ['latin'],
+  weight: '500'
+})
 
 
 function Operational() { 
@@ -16,7 +22,7 @@ function Operational() {
     ];
     return (
       <>
-      
+      <body  className={mon.className}>
         <title>Operational</title>
   
           <div>
@@ -25,7 +31,9 @@ function Operational() {
           <div>
           <Checkbox questions={checkboxQuestions} />
           </div>
-  
+          <footer>
+          </footer>
+          </body>
   
       </>
     );

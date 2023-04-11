@@ -35,6 +35,9 @@ function Technical() {
           <div>
           <Checkbox questions={checkboxQuestions}/>
           </div>
+        <footer>
+          
+        </footer>
   
           </body>
       </>

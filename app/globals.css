@@ -1,3 +1,16 @@
+.checkbox{
+  margin-right: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  max-width: 40rem;
+  margin-left: 5rem;
+}
 
 h1{
   text-align: center;
@@ -12,6 +25,15 @@ h3{
   color: #000000;
   font-size: 2rem;
   margin-top: 5rem;
+}
+
+h4{
+  text-align: center;
+  color: #000000;
+  font-size: 25px;
+  margin-top: 5rem;
+  margin: 3rem;
+  font-weight: 100;
 }
 #textdiv{
   margin-top: 12rem;
@@ -68,6 +90,7 @@ h3{
   -webkit-user-select: none;
   touch-action: manipulation;
   margin: 1rem;
+  text-align: center;
 
 }
 
@@ -88,25 +111,13 @@ h3{
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(to top right, #ffffff 50%, rgb(221, 234, 240) 50%);
+  position: relative;
 }
 
 .main-content {
-  position: relative;
-  z-index: 1;
-}
-
-.left-section {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50%;
   height: 100%;
-  transform-origin: bottom left;
-  transform: skew(45deg);
 }
 
 .riskimage{
@@ -121,6 +132,48 @@ body {
 
 .moreb{
   margin-top: 8rem;
-  margin-left: 10rem;
+  margin-left: 8rem;
 }
 
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  transition: all .5s ease-out;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+input[type="checkbox"]:checked::before {
+  content: '\2714';
+  display: block;
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.assessment-score {
+  text-align: center;
+  color: #000000;
+  font-size: 4rem;
+  margin-top: 5rem;
+
+}
+
+.rb{
+    margin-top: 3rem;
+    margin-left: 15rem;
+    margin-bottom: 3rem;
+  }

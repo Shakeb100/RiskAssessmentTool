@@ -27,7 +27,7 @@ function Questionpage() {
                 </div>
 
                 <div className={mon.className}>
-            <div className='moreb'>
+            <div className='moreb fade-in'>
                 <Link href="/Business">
                 <button className={`${mon.className} button`}>Business</button>
                 </Link>
@@ -49,6 +49,10 @@ function Questionpage() {
                 <button className={`${mon.className} button`}>All Risks</button>
                 </Link>
 
+                </div>
+
+                <div>
+                    <h4 className='fade-2'>Our tool assesses the risk level by selecting questions related to different types of risks. If the selected answers are less than 25%, you will recieve a score of "low". If your score is up to 50%, the score is "Moderate". If your score is up to 75%, you will recieve a "High Risk" warning. If your cumulative score exceeds 75% you will enter the "Critical" category.</h4>
                 </div>
 
              </div>

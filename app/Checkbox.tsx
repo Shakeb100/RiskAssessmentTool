@@ -1,6 +1,7 @@
 "use client"; // this is a client component 👈🏽
 
 import React, { useState } from "react";
+import "./globals.css"; // import the CSS file
 
 interface CheckboxQuestion {
   label: string;
@@ -29,18 +30,31 @@ const Checkbox: React.FC<CheckboxProps> = ({ questions }) => {
 
   const criticalThreshold = 0.75; //threshold for scoring
   const highRiskThreshold = 0.5;
-  
+  const moderateThreshold = 0.25;
+    
   let assessmentScore: string;
-  
+    
   if (numSelectedQuestions === 0) { //risk assessment 
     assessmentScore = "No Risk";
-  } else if (numSelectedQuestions / totalQuestions >= criticalThreshold) {
+  } else if (numSelectedQuestions / totalQuestions > criticalThreshold) {
     assessmentScore = "Critical";
-  } else if (numSelectedQuestions / totalQuestions >= highRiskThreshold) {
+  } else if (numSelectedQuestions / totalQuestions > highRiskThreshold) {
     assessmentScore = "High Risk";
+  } else if (numSelectedQuestions / totalQuestions >= moderateThreshold) {
+    assessmentScore = "Moderate Risk";
   } else {
     assessmentScore = "Low Risk";
   }
+  
+  // Get the element that displays the assessment score
+const assessmentScoreElement = document.getElementById("assessment-score");
+
+// Set the text content of the element
+if (assessmentScoreElement) {
+  assessmentScoreElement.textContent = assessmentScore;
+  assessmentScoreElement.classList.add("assessment-score");
+}
+  
 
   const handleSeeResultsClick = () => {
     setShowAssessmentScore(true);
@@ -55,16 +69,17 @@ const Checkbox: React.FC<CheckboxProps> = ({ questions }) => {
             value={question.value}
             checked={selectedQuestions.includes(question.value)}
             onChange={handleCheckboxChange}
+            className="checkbox"
           />
           {question.label}
         </label>
       ))}
       {showAssessmentScore ? (
-        <p>
+        <p className="assessment-score">
           {assessmentScore}
         </p>
       ) : (
-        <button className="button" onClick={handleSeeResultsClick}>See Results</button>
+        <button className="button rb" onClick={handleSeeResultsClick}>See Results</button>
       )}
     </div>
   );
