@@ -1,38 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bank Risk Assessment Tool 👨‍💼🏦
 
-## Getting Started
+Designed to be a question-based diagnostic tool, built using TypeScript and Next.js, the NLNB Risk Assessment Tool helps banks identify and assess IT risks across the organization.
 
-First, run the development server:
+The tool is intended to be a questionnaire with 25-35 questions that will be answered by the client. Based on their responses, the tool will develop a risk rating, calculate residual risk, and provide recommendations to the bank based on your analysis. Additionally, the tool will automatically calculate the impact of disruptions across critical functions
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## 🤔 How does it work?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The bank selects a number of questions based on the the tool's criteria based questions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- If the number of selected questions is greater than 75% of the total number of questions, the assessment score is "Critical" ⚠️
+- If the number of selected questions is greater than 50% the assessment score is "High Risk" 🔴
+- If the number of selected questions is up to 25% the assessment score is "Moderate Risk" 🟠
+- If the number of selected questions is less than 25% of the total number of questions, the assessment score is "Low Risk" 🟢
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
