@@ -6,7 +6,7 @@ The tool is intended to be a questionnaire with 25-35 questions that will be ans
 
 ### Created for Penn State's IST 302 Project Management course 🐾
 
-## 🤔 How does it work?
+## How does it work?
 
 The bank selects a number of questions based on the the tool's criteria based questions
 
