@@ -8,7 +8,7 @@ The tool is intended to be a questionnaire with 25-35 questions that will be ans
 
 ## How does it work?
 
-The bank selects a number of questions based on the the tool's criteria based questions
+The bank selects a number of questions based on the the tool's criteria based questions.
 
 - If the number of selected questions is greater than 75% of the total number of questions, the assessment score is "Critical" ⚠️
 - If the number of selected questions is greater than 50% the assessment score is "High Risk" 🔴
